@@ -1,9 +1,9 @@
 {
   "name": "bloco-de-notas",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
-    "vailafilhao": "next dev"
+    "localhost": "next dev"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,5 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "devDependencies": {},
   "description": ""
 }
