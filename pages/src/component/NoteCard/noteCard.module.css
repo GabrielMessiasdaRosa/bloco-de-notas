@@ -1,0 +1,28 @@
+.noteCardStyle {
+  width: 20vh;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--fundo-detalhes);
+  border-radius: 4px;
+  flex-wrap: wrap;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  padding: 8px;
+}
+.noteCardHeaderStyle {
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.noteCardTextStyle {
+  margin-top: 8px;
+  font-size: 1em;
+}
+
+.noteCardTitleStyle {
+  font-size: 1.2em;
+  margin-right: 12px;
+}

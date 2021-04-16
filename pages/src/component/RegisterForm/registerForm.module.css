@@ -1,0 +1,33 @@
+.registeForm{
+  flex-grow: 2;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  padding: 12px 40px;
+}
+.registerFormInput {
+  margin: 8px;
+  padding: 4px;
+  border: none;
+  background-color: var(--fundo-detalhes);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.registerFormSubmit {
+  
+  margin: 1em;
+  border-radius: 5px;
+  align-self: flex-end;
+  width: 75%;
+  background-color: var(--secundaria);
+  color: white;
+  font-weight: 400;
+}
+
+.registerFormSubmit:active {
+  background-color: var(--secundaria-ativa);
+}
