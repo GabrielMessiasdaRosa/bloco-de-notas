@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.jsx",
   "scripts": {
-    "localhost": "next dev"
+    "dev": "next dev"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/GabrielMessiasdaRosa/bloco-de-notas#readme",
   "dependencies": {
-    "next": "^10.1.3",
+    "next": "^10.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

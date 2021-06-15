@@ -10,7 +10,7 @@ export default class HomePage extends Component {
     return (
       <section className="conteudo">
         <RegisterForm />
-        <NotesList/>
+        <NoteList/>
       </section>
     );
   }

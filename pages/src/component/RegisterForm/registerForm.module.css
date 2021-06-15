@@ -5,27 +5,39 @@
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-  margin: 50px;
-  padding: 12px 40px;
+  margin:2em;
+  padding: 1em 1em;
+  
 }
+
 .registerFormInput {
-  margin: 8px;
-  padding: 4px;
+  width: 80%;
+  margin: 1em auto;
+  padding: 1em;
   border: none;
   background-color: var(--fundo-detalhes);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
 }
-
+.registeFormTextarea{
+  width: 80%;
+  height: 25vh;
+  margin: auto;
+  padding: 1em;
+  border: none;
+  background-color: var(--fundo-detalhes);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
 .registerFormSubmit {
-  
-  margin: 1em;
-  border-radius: 5px;
+  margin:1em auto;
   align-self: flex-end;
-  width: 75%;
+  width: 50%;
+  height: 5em;
   background-color: var(--secundaria);
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 400;
+  border: none;
 }
 
 .registerFormSubmit:active {

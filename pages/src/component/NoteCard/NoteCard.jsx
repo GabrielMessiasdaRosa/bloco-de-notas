@@ -8,10 +8,9 @@ class NoteCard extends Component {
     return (
       <section className={styles.noteCardStyle}>
           <header className={styles.noteCardHeaderStyle}>
-              <h3 className={styles.noteCardTitleStyle}>Titulo</h3>
-              
+              <h3 className={styles.noteCardTitleStyle}>Title</h3>
           </header>
-          <p className={styles.noteCardTextStyle}>Escreva sua nota</p>
+          <p className={styles.noteCardTextStyle}>\\Write your note</p>
       </section>
     );
   }

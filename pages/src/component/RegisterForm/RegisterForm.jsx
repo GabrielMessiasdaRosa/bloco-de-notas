@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import styles from "./registerForm.module.css";
+
+
+
 export default class RegisterForm extends Component {
   render() {
     return (
@@ -12,7 +15,7 @@ export default class RegisterForm extends Component {
         />
 
         <textarea
-          className={styles.registeFormInput} 
+          className={styles.registeFormTextarea} 
           placeholder="Escreva sua nota"
         ></textarea>
 

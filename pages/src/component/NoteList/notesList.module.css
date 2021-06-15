@@ -1,12 +1,15 @@
 
-.noteList {
-  background-color: var(--fundo);
-  flex-grow: 3;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  list-style-type: none;
-  padding-left: 24px;
-  padding-top: 24px;
+
+.noteList{
+  flex-grow: 2;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  margin:2em;
+  padding: 1em 1em;
+  
 }
 .noteListItem {
   margin: 12px;
