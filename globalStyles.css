@@ -19,7 +19,8 @@ code {
     monospace;
 }
 
-.conteudo {
+.siteContent {
+  margin: auto;
   
 }
 
@@ -29,4 +30,5 @@ code {
   --secundaria-ativa: #cccccc;
   --fundo: #ffffff;
   --fundo-detalhes: #ececec;
+  --fonte-padrao: Arial, Helvetica, sans-serif;
 }

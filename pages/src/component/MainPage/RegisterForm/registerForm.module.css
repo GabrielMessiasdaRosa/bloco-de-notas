@@ -5,18 +5,18 @@
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-  margin:2em;
+  margin:0.5em;
   padding: 1em 1em;
   
 }
 
-.registerFormInput {
+.registerFormInputTitle {
   width: 80%;
   margin: 1em auto;
   padding: 1em;
   border: none;
   background-color: var(--fundo-detalhes);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fonte-padrao);
   font-weight: 100;
 }
 .registeFormTextarea{
@@ -26,7 +26,7 @@
   padding: 1em;
   border: none;
   background-color: var(--fundo-detalhes);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fonte-padrao);
   font-weight: 100;
 }
 .registerFormSubmit {
@@ -40,6 +40,22 @@
   border: none;
 }
 
+.categorySelect {
+  margin: auto;
+  font-family: var(--fonte-padrao);
+  width: 80%;
+  padding: 1em;
+  
+  
+  
+}
+.categorySelect select{
+  width: auto;
+  height: 6vh;
+  border: none;
+  border-radius: 1px;
+  margin: 0.5em;
+}
 .registerFormSubmit:active {
   background-color: var(--secundaria-ativa);
 }
