@@ -1,9 +1,9 @@
 .noteCardStyle {
   max-width: 96%;
-  min-height: 5em;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   background-color: var(--fundo-detalhes);
   border-radius: 0.5px;
   flex-wrap: wrap;
@@ -27,7 +27,6 @@
   height: auto;
   display: flex;
   overflow: hidden;
-  
 }
 
 .noteCardTextStyle {

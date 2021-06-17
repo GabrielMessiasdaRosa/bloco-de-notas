@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import NoteCard from "../NoteCard/NoteCard";
+import NoteCard from "../NoteCard/NoteCard.jsx";
 import styles from "./notesList.module.css";
-import RegisterForm from "../RegisterForm/RegisterForm.jsx";
 
 
 export default class NotesList extends Component {
