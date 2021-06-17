@@ -1,20 +1,32 @@
 import React, { Component } from "react";
-import NoteCard from "./src/component/MainPage/NoteCard/NoteCard.jsx";
-import NotesList from "./src/component/MainPage/NoteList/NotesList.jsx";
 import NoteList from "./src/component/MainPage/NoteList/NotesList.jsx";
 import RegisterForm from "./src/component/MainPage/RegisterForm/RegisterForm.jsx";
 
-
 export default class HomePage extends Component {
-  createNewNote(titleNote, textNote){
-
+  constructor(){
+    super();
+    
+    this.state={
+      notes:[]
+    };
   }
+
+  createNewNote(title, text){
+    const newNote = {title,text}
+    const newNotesArray = [...this.state.notes,newNote]
+    const newState = {
+      notes:newNotesArray
+    }
+    this.setState(newState)
+  }
+  
   render() {
+    console.log("renderizado");
     return (
       <section className="siteContent">
         <h1>Pile of notes</h1>
-        <RegisterForm createNewNote={this._createNote}/>
-        <NoteList/>
+        <RegisterForm createNewNote={this.createNewNote.bind(this)}/>
+        <NoteList notes={this.state.notes}/>
       </section>
     );
   }

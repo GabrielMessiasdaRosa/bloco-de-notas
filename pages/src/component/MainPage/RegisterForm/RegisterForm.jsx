@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import styles from "./registerForm.module.css";
-
+function preventeDP(event){
+  event.preventDefault();
+  event.stopPropagation();
+}
 
 
 export default class RegisterForm extends Component {
@@ -9,7 +12,6 @@ export default class RegisterForm extends Component {
       super(props);
       this.title="";
       this.text="";
-      
 
     };
 
@@ -26,12 +28,14 @@ export default class RegisterForm extends Component {
     }
 
     _createNote(event){
-      event.preventDefault();
-      event.stopPropagation();
-      let titleNote = this.title;
-      let textNote = this.text;
-      console.log(titleNote, textNote);
+      preventeDP(event);
+      let title = this.title;
+      let text = this.text;
+      this.props.createNewNote(title,text);
+      
     }
+
+    
 
 
   render() {
@@ -55,16 +59,7 @@ export default class RegisterForm extends Component {
         onChange={this._handleChangeTextarea.bind(this)}
       ></textarea>
       
-      <div className={styles.categorySelect}>
-        <label className="categorySelect" for="category">Choose a category:</label>
-
-        <select  name="category" id="category">
-          <option id="work" value="Work">Work</option>
-          <option id="Studies" value="Studies">Studies</option>
-          <option id="Reminder" value="Reminder">Reminder</option>
-        </select>
-      </div>
-      <button className={styles.registerFormSubmit}>Write down</button>
+      <button className={styles.registerFormSubmit}>Create</button>
 
       
 

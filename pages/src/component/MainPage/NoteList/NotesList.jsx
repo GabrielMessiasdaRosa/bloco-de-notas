@@ -5,17 +5,19 @@ import RegisterForm from "../RegisterForm/RegisterForm.jsx";
 
 
 export default class NotesList extends Component {
+  constructor(props){
+    super(props);
+  }
   render() {
     return (
       <section>
         <p>Your notes</p>
         <ul className={styles.noteList}>
 
-          {Array.of("l", "l", "a", "g", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G").map((categoria, index) => {
+          {this.props.notes.map((note, index) => {
             return (
               <li key={index} className={styles.noteListItem}>
-                <div>{categoria}</div>
-                <NoteCard />
+                <NoteCard title={note.title} text={note.text}/>
               </li>
             );
           }
