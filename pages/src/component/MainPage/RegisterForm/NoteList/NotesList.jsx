@@ -13,9 +13,9 @@ export default class NotesList extends Component {
         <p>Your notes</p>
         <ul className={styles.noteList}>
 
-          {this.props.notes.map((note, index) => {
+          {this.props.notes.map((note) => {
             return (
-              <li key={index} className={styles.noteListItem}>
+              <li className={styles.noteListItem}>
                 <NoteCard title={note.title} text={note.text}/>
               </li>
             );
