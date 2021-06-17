@@ -4,7 +4,7 @@
   "main": "index.jsx",
   "scripts": {
     "dev": "next dev",
-    "vercel-build": "next build"
+    "vercel-build": "npm pack && next build"
   },
   "repository": {
     "type": "git",
