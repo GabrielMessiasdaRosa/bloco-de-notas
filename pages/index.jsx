@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NoteList from "./src/component/MainPage/NoteList/NotesList.jsx";
+import NoteList from "./src/component/MainPage/RegisterForm/NoteList/NotesList.jsx";
 import RegisterForm from "./src/component/MainPage/RegisterForm/RegisterForm.jsx";
 
 export default class HomePage extends Component {
