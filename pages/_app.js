@@ -6,3 +6,4 @@ export default function globalStyles({ Component, pageProps }) {
   
   return <Component {...pageProps} />;
 }
+
