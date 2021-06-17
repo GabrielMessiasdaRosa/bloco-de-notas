@@ -21,7 +21,6 @@ export default class HomePage extends Component {
   }
   
   render() {
-    console.log("renderizado");
     return (
       <section className="siteContent">
         <h1>Pile of notes</h1>
