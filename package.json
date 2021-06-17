@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.jsx",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+     "vercel-build": "npm run prepare && next build"
   },
   "repository": {
     "type": "git",
