@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 body {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
@@ -18,17 +19,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.siteContent {
-  margin:1em 1em 15em auto ;
+.headerStyle{
+  width: 100%;
+  height: 6vh;
+  margin: auto;
   
 }
-
+.h1-default{
+  
+  font-family: var(--fonte-pangolin);
+  font-size: 2.96em;
+  height: auto;
+  overflow: hidden;
+  margin-top:1em;
+  
+}
+.siteContentStyle {
+  margin:1em 1em 15em auto ;
+}
+.footerStyle{
+  width:100%;
+  height: 100px;
+  background-color: var(--fundo-detalhes);
+}
+.footerStyle h1{
+  font-family: var(--fonte-pangolin);
+  font-size: 1.5em;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+  padding: 1em;
+}
 :root {
   --primaria: #58a4b0;
   --secundaria: #f3b814;
   --secundaria-ativa: #cccccc;
   --fundo: #ffffff;
-  --fundo-detalhes: #ececec;
+  --fundo-detalhes: rgba(255, 230, 0, 0.377);
   --fonte-padrao: Arial, Helvetica, sans-serif;
+  --fonte-pangolin: 'Pangolin', cursive;
 }

@@ -3,31 +3,43 @@ import NoteList from "../component/NoteList/NotesList";
 import RegisterForm from "../component/RegisterForm/RegisterForm";
 
 export default class HomePage extends Component {
-  constructor(){
+  constructor() {
     super();
-    
-    this.state={
-      notes:[]
+
+    this.state = {
+      notes: []
     };
   }
 
-  createNewNote(title, text){
-    const newNote = {title,text}
-    const newNotesArray = [...this.state.notes,newNote]
+  createNewNote(title, text) {
+    const newNote = { title, text }
+    const newNotesArray = [...this.state.notes, newNote]
     const newState = {
-      notes:newNotesArray
+      notes: newNotesArray
     }
     this.setState(newState)
   }
-  
+
   render() {
     return (
-      <section className="siteContent">
-        <h1>Pile of notes</h1>
-        <RegisterForm createNewNote={this.createNewNote.bind(this)}/>
-        <NoteList notes={this.state.notes}/>
-        
-      </section>
+      <>
+        <header className="headerStyle">
+        <h1 className="h1-default">Pile of notes</h1>
+        </header>
+        <main>
+          <section className="siteContentStyle">
+            
+            <RegisterForm createNewNote={this.createNewNote.bind(this)} />
+            <h1 className="h1-default">Your pile of notes</h1>
+            <NoteList notes={this.state.notes} />
+
+          </section>
+        </main>
+        <footer className="footerStyle">
+            <h1>developed by:<br></br> Gabriel Messias da Rosa</h1>
+        </footer>
+      </>
+
     );
   }
 }

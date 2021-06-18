@@ -10,7 +10,6 @@ export default class NotesList extends Component {
   render() {
     return (
       <section>
-        <p>Your notes</p>
         <ul className={styles.noteList}>
 
           {this.props.notes.map((note) => {

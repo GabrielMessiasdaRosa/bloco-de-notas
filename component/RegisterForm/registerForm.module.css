@@ -5,31 +5,26 @@
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-  margin:0.5em;
   padding: 1em 1em;
+  font-family: var(--fonte-pangolin);
   
 }
 
 .registerFormInputTitle {
-  width: 80%;
-  margin: 1em auto;
-  padding: 1em;
+  margin: 1em 0 1em 0;
+  padding: 1.3em;
   border: none;
   background-color: var(--fundo-detalhes);
-  font-family: var(--fonte-padrao);
+  font-family: var(--fonte-pangolin);
   font-weight: 100;
-  background-color: rgba(255, 230, 0, 0.377);
 }
 .registeFormTextarea{
-  width: 80%;
   height: 25vh;
-  margin: auto;
-  padding: 1em;
   border: none;
+  padding: 1.3em;
   background-color: var(--fundo-detalhes);
-  font-family: var(--fonte-padrao);
+  font-family: var(--fonte-pangolin);
   font-weight: 100;
-  background-color: rgba(255, 230, 0, 0.377);
 }
 .registerFormSubmit {
   margin:1em auto;
@@ -37,6 +32,7 @@
   width: 50%;
   height: 5em;
   background-color: var(--secundaria);
+  font-family: var(--fonte-pangolin);
   color: rgb(0, 0, 0);
   font-weight: 400;
   border: none;
@@ -44,12 +40,8 @@
 
 .categorySelect {
   margin: auto;
-  font-family: var(--fonte-padrao);
   width: 80%;
   padding: 1em;
-  
-  
-  
 }
 .categorySelect select{
   width: auto;
@@ -58,6 +50,7 @@
   border-radius: 1px;
   margin: 0.5em;
 }
+
 .registerFormSubmit:active {
   background-color: var(--secundaria-ativa);
 }
