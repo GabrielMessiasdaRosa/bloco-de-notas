@@ -1,6 +1,6 @@
 # bloco-de-notas
-<p>🔷  Status: ⚠️ Em desenvolvimento </p>
-<p>❌ NÃO FUNCIONAL </p>
+<p> 🔷  Status: ⚠️ Em desenvolvimento </p>
+<p> ✔️ FUNCIONAL </p>
 
 <h2>Resumo</h2>
   <p>
@@ -21,7 +21,7 @@
   <tr>
   <td>Versão</td>
     <td>10.x</td>
-    <td>17.0.1</td>
+    <td>10.1.1</td>
     <td>3</td>
   </tr>
 </table>
