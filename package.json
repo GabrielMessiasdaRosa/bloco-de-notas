@@ -4,7 +4,8 @@
   "main": "index.jsx",
   "scripts": {
     "dev": "next dev",
-    "vercel-build": "npm pack && next build"
+    "vercel-build": "npm pack && next build",
+    "start": "NODE_ENV=production node ./_app"
   },
   "repository": {
     "type": "git",

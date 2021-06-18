@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import NoteList from "./src/component/NoteList/NotesList";
-import RegisterForm from "./src/component/RegisterForm/RegisterForm";
+import NoteList from "../component/NoteList/NotesList";
+import RegisterForm from "../component/RegisterForm/RegisterForm";
 
 export default class HomePage extends Component {
   constructor(){
