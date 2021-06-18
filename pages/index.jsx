@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import NoteList from "./src/component/MainPage/RegisterForm/NoteList/NotesList.jsx";
-import RegisterForm from "./src/component/MainPage/RegisterForm/RegisterForm.jsx";
+import NoteList from "./src/component/NoteList/NotesList";
+import RegisterForm from "./src/component/RegisterForm/RegisterForm";
 
 export default class HomePage extends Component {
   constructor(){
@@ -26,6 +26,7 @@ export default class HomePage extends Component {
         <h1>Pile of notes</h1>
         <RegisterForm createNewNote={this.createNewNote.bind(this)}/>
         <NoteList notes={this.state.notes}/>
+        
       </section>
     );
   }
