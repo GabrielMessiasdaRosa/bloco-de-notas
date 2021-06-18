@@ -12,9 +12,9 @@ export default class NotesList extends Component {
       <section>
         <ul className={styles.noteList}>
 
-          {this.props.notes.map((note) => {
+          {this.props.notes.map((note, index) => {
             return (
-              <li className={styles.noteListItem}>
+              <li key={index}className={styles.noteListItem}>
                 <NoteCard title={note.title} text={note.text}/>
               </li>
             );
