@@ -7,39 +7,46 @@ export default class HomePage extends Component {
     super();
 
     this.state = {
-      notes: []
+      notes: [],
     };
   }
 
   createNewNote(title, text) {
-    const newNote = { title, text }
-    const newNotesArray = [...this.state.notes, newNote]
+    const newNote = { title, text };
+    const newNotesArray = [...this.state.notes, newNote];
     const newState = {
-      notes: newNotesArray
-    }
-    this.setState(newState)
+      notes: newNotesArray,
+    };
+    this.setState(newState);
+  }
+  deleteNote(index) {
+    let notesArray = this.state.notes;
+    notesArray.splice(index,1);
+    this.setState({notes:notesArray})
   }
 
   render() {
     return (
       <>
         <header className="headerStyle">
-        <h1 className="h1-default">Pile of notes</h1>
+          <h1 className="h1-default">Pile of notes</h1>
         </header>
         <main>
           <section className="siteContentStyle">
-            
             <RegisterForm createNewNote={this.createNewNote.bind(this)} />
             <h1 className="h1-default">Your pile of notes</h1>
-            <NoteList notes={this.state.notes} />
-
+            <NoteList
+              deleteNote={this.deleteNote.bind(this)}
+              notes={this.state.notes}
+            />
           </section>
         </main>
         <footer className="footerStyle">
-            <h1>developed by:<br></br> Gabriel Messias da Rosa</h1>
+          <h1>
+            developed by:<br></br> Gabriel Messias da Rosa
+          </h1>
         </footer>
       </>
-
     );
   }
 }
